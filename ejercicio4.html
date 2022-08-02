@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio numero 4</title>
+</head>
+<h1> ejercicio de javascrip numero 4</h1>
+<p> Una emisora con presencia en diferentes ciudades desea conocer el rating de canciones y cantantes más
+    escuchados (sonados) en este semestre del año. Por lo tanto, se ha pedido a estudiantes del SENA del
+    programa de tecnólogo en análisis y desarrollo de software desarrollar una solución que permita conocer
+    la respuesta de 6 personas con relación a sus gustos musicales. Con fines administrativos y realizar una
+    rifa entre las personas encuestadas, la emisora desea poder registrar de las personas entrevistadas su
+    nombre, número de identificación (cédula), fecha de nacimiento, correo electrónico, ciudad de residencia,
+    ciudad de origen. Además, se deberá poder almacenar el artista y título de hasta 3 canciones favoritas en
+    cada una de las personas que se ingrese, teniendo en cuenta lo anterior, se sugiere que la solución deberá
+    mostrar un menú que permita las siguientes opciones:
+    a. Agregar una persona con los datos que se listan anteriormente.
+    b. Mostrar la información personal de una persona particular por medio de su posición en el vector</p>
+
+<body>
+    <script>
+
+
+let lista1=[]
+let listaNombre=[]
+
+   let id=parseInt(prompt("ingrese el documento de identidad"))
+   let nombre= String(prompt("dingrese nombre completo"))
+   let fechanacimiento=parseInt(prompt("ingrese fecha de nacimiento"))
+   let email=String(prompt("ingrese el correo electronico"))
+   let residenciaactual= String(prompt("ingrese ciudad de residencia"))
+   let ciudadDeOrigen= String(prompt("ingrese la ciudad de origen"))
+let canciones
+let artista
+   
+   //capturar datos en la tabla
+
+ 
+   
+   id = document.write(id + "<br/>")
+lista1.push(id)
+document.write(lista1)
+
+nombre = document.write(nombre + "<br/>")
+lista1.push(nombre)
+document.write(lista1)
+
+fechanacimiento = document.write(fechanacimiento + "<br/>")
+lista1.push(fechanacimiento)
+document.write(lista1)
+
+email = document.write(email + "<br/>")
+lista1.push(email)
+document.write(lista1)
+
+residenciaactual = document.write(residenciaactual + "<br/>" )
+lista1.push(residenciaactual)
+document.write(lista1)
+
+ciudadDeOrigen = document.write(ciudadDeOrigen  + "<br/>")
+lista1.push(ciudadDeOrigen)
+document.write(lista1)
+
+ 
+
+
+//capturar el nombre, el titulo de 3 canciones y el artista
+for(i=1;i <=3;i++){
+canciones=String(prompt("ingresar canciones"))
+
+canciones=document.write (canciones+"<br/>")
+lista1.push(canciones)
+document.write(i)
+}
+
+for( j=1; j <=3; j++){
+artista=String(prompt("ingresar artista"))
+artista=document.write (artista + "<br/>")
+lista1.push(artista)
+document.write(j)
+}
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
+
+
